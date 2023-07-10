@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16pt;
+    overflow: hidden;
+}
+
+#menu, #selectPlayer, #background_img , #hilfe , #backgroundInGame_img , #container, #fin {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#selectPlayer, #container , #fin   {
+    display: none;
+}
+
+#menu > *, #selectPlayer > *, #container > *, #fin > *  {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Menu */
+
+#logo {
+    top: 20%;
+    left: 50%;
+}
+
+#logo_img , #background_img , #hilfe_img , #backgroundInGame_img {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+}
+
+#btnStart{
+    top: 93%;
+    left: 50%;   
+}
+
+#btnHilfe {
+    top: 5%;
+    left: 5%;
+}
+
+/* Hilfe */
+#btnHilfeBeenden {
+    top: 85%;
+    left: 3.5%;
+    position: absolute;
+}
+
+/* Select Player */
+
+#teamschrift {
+    top: 15%;
+    left: 50%;
+    font-size: 3.5rem;
+    color: whitesmoke;
+    font-family: 'Maiden Orange', cursive;
+}
+
+#laender {
+    display: flex;
+    flex-direction: flex;
+    top: 25%;
+    left: 50%;
+}
+
+#laender > * {
+    margin: 0 40px;
+}
+
+#playerSelect {
+    top: 55%;
+    left: 50%;
+}
+
+#playerSelect img {
+    position: relative;
+    width: 250px;
+    margin: 0 40px;
+}
+
+#btnSelect {
+    top: 85%;
+    left: 50%;
+}
+
+.selected {
+    background-color: red !important;
+}
+
+/* Spiel */
+#name {
+    top: 5%;
+    left: 50%;
+    z-index: 10;
+    font-family: 'Bungee Outline', cursive;
+}
+
+#score {
+    top: 10%;
+    left: 50%;
+    z-index: 10;
+    font-family: 'Bungee Outline', cursive;
+}
+
+#end, #goal {
+    display: none;
+    top: 30%;
+    left: 50%;
+    font-size: 4rem;
+    z-index: 20;
+    font-family: 'Faster One', 'cursive'
+}
+
+#end {
+    display: none;
+    font-size: 6rem;
+}
+
+#puck {
+    top: 89%;
+    left: 32%;
+    z-index: 10;
+    width: 50px;
+}
+
+#tor {
+    top: 30%;
+    left: 50%;
+}
+
+#tor_img {
+    position: relative;
+    width: 700px;
+    height: 700px;   
+}
+
+#torwart_img{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    width: 250px;
+    height: 250px; 
+}
+
+.antwort {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+}
+#zahl1 {
+    top: 50%;
+    left: 28%;
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+}
+#zahl2 {
+    top: 37%;
+    left: 50%;
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+}
+#zahl3 {
+    top: 50%;
+    left: 73%;
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+}
+
+#player {
+    top: 80%;
+    left: 45%;
+    width: 350px;
+}
+#rechnung {
+    top: 62%;
+    left: 47%;
+    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.8rem;
+    color: aliceblue;
+    background-color: #466c77;
+    border: 5px solid black;
+    font-family: 'Maiden Orange', cursive;
+}
+
+#btnBeenden {
+    top: 90%;
+    left: 10%;
+}
+
+/* Final Screen */
+
+#finalScreen {
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+}
+
+#btnretry {
+    top: 93%;
+    left: 50%;
+
+}

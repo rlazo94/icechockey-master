@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Hockey - PBA3H19A Lazovskij</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!-- Neue Schriftart-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="menu">
+        <!--<h1 id="logo">Ice Hockey</h1>-->
+        <img id="logo_img" src="./img/Menu1_1200.jpg">
+        <button id="btnStart" class="btn">Spiel Starten</button>
+        <button id="btnHilfe" class="btn">Hilfe</button>
+    </div>
+    <div id ="hilfe">
+        <img id="hilfe_img" src="./img/Hilfe_anzeige.png">
+        <button id="btnHilfeBeenden" class="btn">Beenden</button>
+    </div>
+    <div id="selectPlayer">
+        <img id="background_img" src="./img/background_img.jpg">
+        <h1 id="teamschrift">Wähle dein Team</h1>
+        <div id="laender">
+            <button id="btnRus" class="btn team">RUS</button>
+            <button id="btnKa" class="btn team">KA</button>
+            <button id="btnDeu" class="btn team">DEU</button>
+            <button id="btnFin" class="btn team">FIN</button>
+        </div>
+        <div id="playerSelect">
+            <img src="./img/spielerauswahl_Rus.png" alt="Player">
+        </div>
+        <button id="btnSelect" class="btn">Spiel Starten</button>
+    </div>
+    <div id="container">
+        <img id="backgroundInGame_img" src="./img/backgroundInGame_img.jpg">
+        <h1 id="name">Rus : Fin</h1>
+        <h1 id="score">00 : 00</h1>
+        <h2 id="goal"></h2>
+        <div id="tor">
+            <img id="tor_img" src="./img/Tor_1200.png" alt="Hockey Tor">
+            <img id="torwart_img" alt="Hockey Torwart">
+            <span id="zahl1" class="antwort">4</span>
+            <span id="zahl2" class="antwort">6</span>
+            <span id="zahl3" class="antwort">8</span>
+        </div>
+        <img id="puck" src="./img/puck.png" alt="puck">
+        <img id="player" alt="Player"> 
+        <div id="rechnung">
+            <span>2+2</span>
+        </div>    
+        <button id="btnBeenden" class="btn">
+            Beenden
+        </button>
+    </div>
+    <div id="fin">
+        <h2 id="end"></h2>
+        <img id="finalScreen" src="./img/Menu2_1200.png" alt="Final Screen">
+        <button id="btnretry" class="btn">Nochmal</button> 
+    </div>
+    <script src="./js/globals.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
